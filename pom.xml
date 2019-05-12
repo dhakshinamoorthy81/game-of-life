@@ -21,19 +21,6 @@
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
     
-    <repositories>
-  <repository>
-    <id>wakaleo-releases</id>
-    <name>Wakaleo Releases</name>
-    <url>http://www.wakaleo.com/maven/repos/</url>
-  </repository>
- <repository>
-    <id>wakaleo-releases-2</id>
-    <name>Wakaleo Releases 2</name>
-    <url>http://maven.wakaleo.com/releases/</url>
- </repository>
-</repositories>
-
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
@@ -327,6 +314,19 @@
                                     <groupId>org.apache.maven.plugins</groupId>
                                     <artifactId>maven-checkstyle-plugin</artifactId>
                                     <version>3.0.1</version>
+                                    
+                                        <repositories>
+  <repository>
+    <id>wakaleo-releases</id>
+    <name>Wakaleo Releases</name>
+    <url>http://www.wakaleo.com/maven/repos/</url>
+  </repository>
+ <repository>
+    <id>wakaleo-releases-2</id>
+    <name>Wakaleo Releases 2</name>
+    <url>http://maven.wakaleo.com/releases/</url>
+ </repository>
+</repositories>
                                     <!--<configuration>-->
                                     <!--<configLocation>gol-checkstyle.xml</configLocation>-->
                                     <!--</configuration>-->
